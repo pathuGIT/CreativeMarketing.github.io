@@ -183,7 +183,7 @@ li{
         display: block;
         align-items: normal;
         margin-top: 50px;
-        height: fit-content;
+        height: 70vh;
     }
     .raw2 .col2{
         display: none;
