@@ -1,14 +1,16 @@
 body{
-    padding: 20px;
+    padding: 20px 40px;
+    background-color: #20364b;
 }
 li{
     list-style-type: none;
     font-size: 15px;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .raw1{
-    border: 1px solid black;
     display: flow-root;
+    z-index: 5;
 }
 .raw1 div{
     float: left;
@@ -41,6 +43,7 @@ li{
 .raw1 .links li{
     display: inline-block;
     cursor: pointer;
+    z-index: 5;
 }
 .raw1 .links li:not(:last-child){
     margin-right: 40px;
@@ -52,7 +55,7 @@ li{
 }
 .raw1 .links li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 #search{
     width: 50px;
@@ -78,7 +81,12 @@ li{
     .raw1 .links li{
         display: block;
         width: 100%;
+        background-color: rgba(155, 155, 155, 0);
+    }
+    .raw1 .links li:not(:first-child){
         border: 1px solid grey;
+        background-color: #20364b;
+        z-index: 5;
     }
     .raw1 .links li a{
         padding-left: 10px;
@@ -86,7 +94,120 @@ li{
     .links li:not(:first-child){
         display: none;
     }
-    .raw1 .links li:not(:last-child):hover{
-        border-bottom: 2px solid rgba(255, 217, 0, 0);
+    #menu:hover{
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    #search{
+        border: none;
+    }
+    #search img{
+        display: none;
+    }
+}
+
+.raw2{
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.raw2 .col1{
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+.raw2 .col1 h2{
+    font-size: 4vw;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffc400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.raw2 .col1 P{
+    width: 70%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.raw2 .col1 input{
+    border: none;
+    width: 40%;
+    height: 35px;
+    border-radius: 13px;
+    margin-top: 15px;
+    outline: none;
+}
+.raw2 .col1 input::placeholder{
+    padding-left: 20px;
+}
+#btn{
+    background-color: #ffc400;
+    cursor: pointer;
+    width: 10%;
+    height: 30px;
+}
+.raw2 .col2{
+    border: 1px solid rgba(255, 255, 255, 0);
+    display:flow-root;
+    height: 100%;
+}
+.raw2 .col2 .image{
+    width: 500px;
+    position: relative;
+    padding-top: 50px;
+}
+.raw2 .col2 .image img{
+    width: 100%;
+    position: absolute;
+}
+
+.icon{
+    width: 60px;
+    position: absolute;
+}
+.icon img{
+    width: 100%;
+}
+.icon1{
+    top: 20%;
+    right: 30%
+}
+.icon2{
+    top: 70%;
+    right: 42%;
+}
+.icon3{
+    top: 85%;
+    right: 5%;
+}
+@media screen and (max-width:1000px){
+    .raw2{
+        display: block;
+        align-items: normal;
+        margin-top: 50px;
+        height: fit-content;
+    }
+    .raw2 .col2{
+        display: none;
+    }
+    .raw2 .col1 input{
+        width: 99%;
+        height: 30px;
+        border-radius: 7px;
+    }
+    #btn{
+        width: 100%;
+        height: 30px;
+        border-radius: 7px;
+    }
+    .raw2 .col1 h2{
+        font-size: 30px;
+        z-index: 0;
+    }
+    .raw2 .col1 h2 span{
+        font-size: 20px;
+    }
+    .raw2 .col1 P{
+        width: 90%;
+        font-size: 13px;
+        text-align: justify;
     }
 }
