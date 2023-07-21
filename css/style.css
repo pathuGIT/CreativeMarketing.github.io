@@ -1,0 +1,92 @@
+body{
+    padding: 20px;
+}
+li{
+    list-style-type: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.raw1{
+    border: 1px solid black;
+    display: flow-root;
+}
+.raw1 div{
+    float: left;
+}
+.raw1 .logo{
+    border: 1px solid rgba(255, 0, 0, 0);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+#icon{
+    width: 50px;
+}
+#icon img{
+    width: 100%;
+}
+.raw1 .logo li:last-child p{
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+.raw1 .links{
+    border: 1px solid rgba(255, 0, 0, 0);
+    float: right;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+}
+.raw1 .links li{
+    display: inline-block;
+    cursor: pointer;
+}
+.raw1 .links li:not(:last-child){
+    margin-right: 40px;
+    font-weight: 400;
+    padding: 17px 0;
+}
+.raw1 .links li:not(:last-child):hover{
+    border-bottom: 2px solid gold;
+}
+.raw1 .links li a{
+    text-decoration: none;
+    color: black;
+}
+#search{
+    width: 50px;
+}
+#search img{
+    width: 100%;
+}
+#menu i{
+    display: none;
+}
+@media screen and (max-width:650px){
+    #menu i{
+        display: block;
+        padding-left: 10px;
+    }
+    .raw1 div{
+        float: none;
+    }
+    .raw1 .links{
+        float: none;
+        display: block;
+    }
+    .raw1 .links li{
+        display: block;
+        width: 100%;
+        border: 1px solid grey;
+    }
+    .raw1 .links li a{
+        padding-left: 10px;
+    }
+    .links li:not(:first-child){
+        display: none;
+    }
+    .raw1 .links li:not(:last-child):hover{
+        border-bottom: 2px solid rgba(255, 217, 0, 0);
+    }
+}
