@@ -208,6 +208,7 @@ li{
     .raw2 .col1 P{
         width: 90%;
         font-size: 13px;
+        margin-bottom: 50px;
         text-align: justify;
     }
 }
