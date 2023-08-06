@@ -3,7 +3,7 @@ Front-end Website
 
 Welcome to my digital marketing front-end website! This project was built with HTML, CSS, and jQuery to provide a visually stunning and interactive experience for users interested in digital marketing.
 
-![Website Preview](img/Capture-m.JPG)
+![Website Preview](img/Capture.JPG)
 
 ## Features
 
